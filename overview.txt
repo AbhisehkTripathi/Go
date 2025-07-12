@@ -1,0 +1,48 @@
+# package main = "This is a runnable Go program"
+# func main() = "Start running from here"
+
+
+# List of All 25 Go Keywords
+
+break      default      func         interface    select
+case       defer        go           map          struct
+chan       else         goto         package      switch
+const      fallthrough  if           range        type
+continue   for          import       return       var
+
+#datatype
+
+| Category             | Data Types                                               | Example                |
+| -------------------- | -------------------------------------------------------- | ---------------------- |
+| **Boolean**          | `bool`                                                   | `true`, `false`        |
+| **Integer**          | `int`, `int8`, `int16`, `int32`, `int64`                 | `var x int = 10`       |
+| **Unsigned Integer** | `uint`, `uint8`, `uint16`, `uint32`, `uint64`, `uintptr` | `var u uint = 25`      |
+| **Float**            | `float32`, `float64`                                     | `var f float64 = 3.14` |
+| **Complex**          | `complex64`, `complex128`                                | `var c = 2 + 3i`       |
+| **String**           | `string`                                                 | `"Hello"`              |
+| **Byte**             | `byte` (alias for `uint8`)                               | `"A"[0]` is byte       |
+| **Rune**             | `rune` (alias for `int32`, for Unicode)                  | `'你'` is a rune        |
+
+
+# function
+| Type                     | Signature Example                            |
+| ------------------------ | -------------------------------------------- |
+| Basic function           | `func sayHello()`                            |
+| Params & return          | `func add(a, b int) int`                     |
+| Multiple returns         | `func divide(x, y int) (int, int)`           |
+| Variadic                 | `func sum(nums ...int)`                      |
+| Anonymous                | `add := func(a, b int) int { return a + b }` |
+| IIFE                     | `func(x int) int { return x*x }(5)`          |
+| Closure                  | `func makeAdder(x int) func(int) int`        |
+| Method (struct receiver) | `func (u User) Greet()`                      |
+| Pointer receiver method  | `func (u *User) Rename(name string)`         |
+| Recursive                | `func factorial(n int) int`                  |
+| Panic & recover          | `defer func() { recover() }()`               |
+
+
+# any
+| Option             | Description                     | Use Case                  |
+| ------------------ | ------------------------------- | ------------------------- |
+| `interface{}`      | Holds any type (old way)        | Quick & dirty flexibility |
+| `any`              | Cleaner alias for `interface{}` | Modern Go code            |
+| Generics `[T any]` | Type-safe "any" (Go 1.18+)      | Functions/data structures |
