@@ -9,6 +9,7 @@ var Welcome string = "Welcome to Variable in Go 1"
 // Multiple variable declarations
 var Age int = 24
 var City string = "New York"
+var Amount float64 = 100.533333333333333333333333333
 
 // Grouped variable declaration
 var (
