@@ -7,8 +7,9 @@ var Greeting string = "Welcome to Variable in Go"
 var Welcome string = "Welcome to Variable in Go 1"
 
 // Multiple variable declarations
-var Age int = 24
+// var Age int = 24
 var City string = "New York"
+var Email string = "mohit2096@gmail.com"
 var Amount float64 = 100.533333333333333333333333333
 
 // Grouped variable declaration
@@ -30,7 +31,7 @@ func variable() {
 
 // Function that returns a summary strings
 func VariableInfo() string {
-	return "Name: Abhishek, Age: " + fmt.Sprint(Age) + ", City: " + City + ", Country: " + Country + ", Language: " + Language
+	return "Name: Abhishek, Age: " + fmt.Sprint(24) + ", City: " + City + ", Country: " + Country + ", Language: " + Language
 }
 
 func CityInformation() string {
